@@ -1,0 +1,3 @@
+
+./tools.sh 
+./link.sh
