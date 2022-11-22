@@ -10,3 +10,4 @@ else
 fi
 
 /bin/bash "$INSTALL_DIR/scripts/setup.bash"
+echo "Install Completed"
