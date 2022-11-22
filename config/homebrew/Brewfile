@@ -1,0 +1,10 @@
+
+brew "gcc"
+brew "git"
+brew "marp-cli"
+brew "postgresql"
+brew "sqlite"
+brew "wget"
+
+cask "docker"
+cask "visual-studio-code"
