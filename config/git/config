@@ -1,0 +1,19 @@
+[use]
+	name = hedwig100
+
+[user]
+	name = hedwig100
+	email = pentagon7951@outlook.jp
+
+[init]
+	defaultBranch = main
+	templatedir = ~/.config/git/template
+
+[core]
+	editor = vim
+
+[pull]
+    ff = only
+
+[include]
+    path = conf.d/local.conf
