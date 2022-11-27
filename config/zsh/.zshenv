@@ -12,3 +12,7 @@ export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 if [ -e "$ZDOTDIR/local.env" ]; then
     source "$ZDOTDIR/local.env"
 fi
+
+### Deno ### 
+export DENO_INSTALL="$XDG_DATA_HOME/deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
