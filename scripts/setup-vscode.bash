@@ -1,6 +1,12 @@
 #/usr/bin/sh 
 set -ex
 
+if type code>/dev/null; then
+    echo "Visual Studio Code is installed. Start to configure vscode ..."
+else
+    exit 0 
+fi
+
 ### link ### 
 
 VSCODE_SETTING_DIR=""

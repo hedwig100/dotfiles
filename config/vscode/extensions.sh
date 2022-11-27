@@ -13,7 +13,7 @@ code --install-extension marp-team.marp-vscode@1.5.2
 code --install-extension James-Yu.latex-workshop@9.0.1
 
 # Python
-code --install-extension ms-python.pythonn@2022.16.1
+code --install-extension ms-python.python@2022.16.1
 code --install-extension ms-python.vscode-pylance@2022.11.30
 
 # Cpp
