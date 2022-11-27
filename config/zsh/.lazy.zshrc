@@ -1,4 +1,10 @@
 
+### zsh plugins ###
+zinit wait lucid blockf light-mode for \
+    atload'async_init' @'mafredri/zsh-async' \
+    @'zsh-users/zsh-autosuggestions' \
+    @'zsh-users/zsh-completions' \
+    @'zdharma-continuum/fast-syntax-highlighting'
 
 ### Zeno ### 
 

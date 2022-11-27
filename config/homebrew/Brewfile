@@ -1,11 +1,14 @@
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 
+brew "fzf"
 brew "gcc"
+brew "ghq"
 brew "git"
 brew "marp-cli"
 brew "postgresql"
 brew "sqlite"
+brew "tmux"
 brew "wget"
 
 cask "docker"
