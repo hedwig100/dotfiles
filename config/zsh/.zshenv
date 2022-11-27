@@ -7,3 +7,8 @@ export XDG_CACHE_HOME="$HOME/.cache"
 
 ### zsh ###
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
+
+### local setting ###
+if [ -e "$ZDOTDIR/local.env" ]; then
+    source "$ZDOTDIR/local.env"
+fi
