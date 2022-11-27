@@ -1,0 +1,94 @@
+{
+    "editor.fontSize": 26,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "window.zoomLevel": -3,
+    "workbench.colorTheme": "Solarized Light",
+    "code-runner.runInTerminal": true,
+
+    // ---------- Language ----------
+    // -- Latex ---
+    "[tex]": {
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        "editor.tabSize": 4
+    },
+    "[latex]": {
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        "editor.tabSize": 4
+    },
+    "[bibtex]": {
+        "editor.tabSize": 4
+    },
+
+    // -- Yaml ---
+    "[yaml]": {
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        "editor.tabSize": 4
+    },
+
+    // --- Python ---
+    "[python]": {
+        "pythonPath": "/usr/bin/python3",
+        "defaultInterpreterPath": "/usr/bin/python3"
+    },
+
+    // -- Rust ---
+    "[rust]": {
+        "editor.defaultFormatter": "matklad.rust-analyzer",
+        "editor.formatOnSave": true
+    },
+
+    // --- Go ---
+    "[go]": {
+        "GO111MODULE": "on"
+    },
+
+
+    // ---------- LaTeX Workshop ----------
+    "latex-workshop.intellisense.package.enabled": true,
+    "latex-workshop.latex.clean.fileTypes": [
+        "*.aux",
+        "*.bbl",
+        "*.blg",
+        "*.idx",
+        "*.ind",
+        "*.lof",
+        "*.lot",
+        "*.out",
+        "*.toc",
+        "*.acn",
+        "*.acr",
+        "*.alg",
+        "*.glg",
+        "*.glo",
+        "*.gls",
+        "*.ist",
+        "*.fls",
+        "*.log",
+        "*.fdb_latexmk",
+        "*.snm",
+        "*.nav",
+        "*.dvi",
+        "*.synctex.gz"
+    ],
+    "latex-workshop.latex.outDir": "out",
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "latexmk",
+            "tools": [
+                "latexmk"
+            ]
+        }
+    ],
+    "latex-workshop.latex.tools": [
+        {
+            "name": "latexmk",
+            "command": "latexmk",
+            "args": [
+                "-silent",
+                "-outdir=%OUTDIR%",
+                "%DOC%"
+            ]
+        }
+    ],
+    "latex-workshop.view.pdf.viewer": "tab"
+}

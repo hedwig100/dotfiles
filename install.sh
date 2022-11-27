@@ -1,4 +1,6 @@
 #!/bin/sh
+set -ex 
+
 INSTALL_DIR="${INSTALL_DIR:-$HOME/repos/github.com/hedwig100/dotfiles}"
 
 if [ -d "$INSTALL_DIR" ]; then
