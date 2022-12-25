@@ -11,6 +11,7 @@ brew "sqlite"
 brew "tmux"
 brew "wget"
 brew "ghq"
+brew "navi"
 
 cask "docker"
 cask "visual-studio-code"
