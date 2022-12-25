@@ -10,6 +10,7 @@ brew "postgresql"
 brew "sqlite"
 brew "tmux"
 brew "wget"
+brew "ghq"
 
 cask "docker"
 cask "visual-studio-code"
