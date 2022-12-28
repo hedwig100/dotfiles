@@ -19,3 +19,6 @@ export PATH="$DENO_INSTALL/bin:$PATH"
 
 ### navi ###
 export NAVI_CONFIG="$XDG_CONFIG_HOME/navi/config.yaml"
+
+### pyenv ### 
+export PYENV_ROOT="$HOME/.pyenv"
