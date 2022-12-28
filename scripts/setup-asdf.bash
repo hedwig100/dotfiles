@@ -21,4 +21,5 @@ else
 
     echo "Installing asdf-vm plugins..."
     asdf plugin add python
+    asdf plugin add ghq
 fi
