@@ -1,9 +1,5 @@
 {
-    "editor.fontSize": 26,
     "diffEditor.ignoreTrimWhitespace": false,
-    "window.zoomLevel": -3,
-    "workbench.colorTheme": "Solarized Light",
-    "code-runner.runInTerminal": true,
 
     // ---------- Language ----------
     // -- Latex ---

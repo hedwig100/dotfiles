@@ -5,6 +5,7 @@ local.*
 config/zsh/.zsh_history
 config/zsh/.zsh_sessions
 config/zsh/local.env
+config/zsh/.zcompdump
 
 ### git ### 
 config/git/conf.d/local.conf
