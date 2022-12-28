@@ -7,14 +7,15 @@ curl -sL https://raw.githubusercontent.com/hedwig100/dotfiles/main/install.sh | 
 
 ## WSL
 
-- vscodeのインストールはwindows上で行い, remote wslで操作する方がよいため, vscodeのインストールは手動で行い, vscodeの設定ファイルへのパスを適切に変えてから `bash /scripts/setup-vscode.bash` で拡張機能, settings.jsonが設定されるはず. 
+- vscodeのインストールはwindows上で行い, remote wslで操作する方がよいため, vscodeのインストールは手動で行い, vscodeの設定ファイルへのパスを適切に変えてから `bash /scripts/setup-vscode.bash` で拡張機能を入れる. settings.jsonはwindowsのほうにあるので手動で設定することにする
 
-### 設定を行うもの
+### インストールを行うもの
 
 - zsh
 - homebrew
 - apt
 - git
+- asdf
 
 ## TODO
 
@@ -31,4 +32,3 @@ curl -sL https://raw.githubusercontent.com/hedwig100/dotfiles/main/install.sh | 
     - python
     - go
     - rust
-    - latex
