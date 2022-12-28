@@ -45,3 +45,13 @@ __zeno_atload() {
 zinit wait lucid light-mode for \
     atload'__zeno_atload' \
     @'yuki-yano/zeno.zsh'
+
+
+### asdf-vm ###
+__asdf_atload() {
+    export ASDF_DATA_DIR="$XDG_DATA_HOME/asdf"
+}
+zinit wait lucid light-mode for \
+    atpull'asdf plugin update --all' \
+    atload'__asdf_atload' \
+    @'asdf-vm/asdf'
