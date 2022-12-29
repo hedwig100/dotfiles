@@ -48,6 +48,11 @@ zinit wait lucid light-mode for \
 
 
 ### asdf-vm ###
+export ASDF_DATA_DIR="$XDG_DATA_HOME/asdf"
+source "$ASDF_DATA_DIR/asdf.sh"
+fpath=(${ASDF_DIR}/completions $fpath)
+autoload -Uz compinit && compinit
+
 # __asdf_atload() {
 #     export ASDF_DATA_DIR="$XDG_DATA_HOME/asdf"
 # }
@@ -55,7 +60,3 @@ zinit wait lucid light-mode for \
 #     atpull'asdf plugin update --all' \
 #     atload'__asdf_atload' \
 #     @'asdf-vm/asdf'
-
-### pyenv ### 
-command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
