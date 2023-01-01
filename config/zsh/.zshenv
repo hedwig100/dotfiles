@@ -20,7 +20,8 @@ export PATH="$DENO_INSTALL/bin:$PATH"
 ### navi ###
 export NAVI_CONFIG="$XDG_CONFIG_HOME/navi/config.yaml"
 
-### Python ###
-# Poetry
-export POETRY_HOME="$XDG_DATA_HOME/poetry"
-export PATH="$PATH:$POETRY_HOME/bin"
+### Go ###
+export GO111MODULE=on
+if type go >/dev/null; then
+    export PATH="$PATH:$(go env GOPATH)/bin"
+fi
