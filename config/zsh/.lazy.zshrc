@@ -60,3 +60,8 @@ autoload -Uz compinit && compinit
 #     atpull'asdf plugin update --all' \
 #     atload'__asdf_atload' \
 #     @'asdf-vm/asdf'
+
+### Go ###
+if type go >/dev/null; then
+    export PATH="$PATH:$(go env GOPATH)/bin"
+fi

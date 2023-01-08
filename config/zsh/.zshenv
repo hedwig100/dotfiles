@@ -22,6 +22,3 @@ export NAVI_CONFIG="$XDG_CONFIG_HOME/navi/config.yaml"
 
 ### Go ###
 export GO111MODULE=on
-if type go >/dev/null; then
-    export PATH="$PATH:$(go env GOPATH)/bin"
-fi
