@@ -65,3 +65,7 @@ autoload -Uz compinit && compinit
 if type go >/dev/null; then
     export PATH="$PATH:$(go env GOPATH)/bin"
 fi
+
+### Poetry ### 
+export POETRY_HOME="$XDG_DATA_HOME/poetry"
+export PATH="$PATH:$POETRY_HOME/bin"
