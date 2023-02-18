@@ -69,3 +69,6 @@ fi
 ### Poetry ### 
 export POETRY_HOME="$XDG_DATA_HOME/poetry"
 export PATH="$PATH:$POETRY_HOME/bin"
+
+### Rust ###
+source "$CARGO_HOME/env"
