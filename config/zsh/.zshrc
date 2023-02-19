@@ -4,6 +4,24 @@ ZINIT[HOME_DIR]="$XDG_DATA_HOME/zinit"
 ZINIT[ZCOMPDUMP_PATH]="$XDG_STATE_HOME/zcompdump"
 source "${ZINIT[HOME_DIR]}/bin/zinit.zsh"
 
+## path ###
+path=(
+  "$XDG_DATA_HOME"(N-/)
+  "$path[@]"
+)
+
+fpath=(
+  "$XDG_DATA_HOME/zsh/completions"(N-/)
+  "$fpath[@]"
+)
+
+### history ###
+export HISTFILE="$XDG_STATE_HOME/zsh_history"
+export HISTSIZE=1000
+export SAVEHIST=100000
+
+setopt share_history
+
 ## theme of prompt
 zinit ice depth"1" # git clone depth
 zinit light romkatv/powerlevel10k
