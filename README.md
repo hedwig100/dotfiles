@@ -4,6 +4,12 @@
 ```
 curl -sL https://raw.githubusercontent.com/hedwig100/dotfiles/main/install.sh | sh
 ```
+のあとにシェルを再起動してから
+```
+chsh -s /bin/zsh
+```
+のあとにまたシェルを再起動する.
+
 
 ## インストールを行うもの
 
@@ -15,11 +21,6 @@ curl -sL https://raw.githubusercontent.com/hedwig100/dotfiles/main/install.sh | 
 3. `deno` のインストールをする.
 4. `zinit` (zshのプラグインマネージャ) をインストールする. 
 5. `asdf` をインストールする.
-
-- ghqもなんか今は手動でインストールするようになっている. asdfでインストールする.
-- vscodeはwindows側に入れたほうがいいため, 手動でインストールすることを推奨. 設定は
-`vscode/extensions.sh` にあるため, これを実行すれば拡張機能がインストールされる.
-`vscode/settings.json` へのシンボリックリンクを張るのもやったほうがいい. 
 
 ### On Mac
 
@@ -39,3 +40,33 @@ WIP...
     - ssh-keyも作ると良い.
 5. latexmk
     - 設定のみでインストールはしない(時間がかかるため)
+
+## 追加設定
+自動でやってもいいかもしれない. 
+
+- ghqをインストールする
+```
+asdf list all ghq
+asdf install ghq <version>
+asdf global ghq <version>
+```
+
+- pythonをインストールする
+```
+asdf list all python
+asdf install python <version>
+asdf global python <version>
+```
+
+- golangをインストールする
+```
+asdf plugin-add golang https://github.com/kennyp/asdf-golang.git
+asdf list all golang <version>
+asdf install golang <version>
+asdf global golang <version>
+```
+
+- vscodeはwindows側に入れたほうがいいため, 手動でインストールすることを推奨. 設定は
+`vscode/extensions.sh` にあるため, これを実行すれば拡張機能がインストールされる.
+`vscode/settings.json` へのシンボリックリンクを張るのもやったほうがいい. 
+
