@@ -72,3 +72,6 @@ export PATH="$PATH:$POETRY_HOME/bin"
 
 ### Rust ###
 source "$CARGO_HOME/env"
+
+### MySQL ###
+export DATADIR="$ASDF_DATA_DIR/installs/mysql/datadir/"
