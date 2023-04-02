@@ -71,7 +71,9 @@ export POETRY_HOME="$XDG_DATA_HOME/poetry"
 export PATH="$PATH:$POETRY_HOME/bin"
 
 ### Rust ###
-source "$CARGO_HOME/env"
+if type cargo > /dev/null; then 
+    source "$CARGO_HOME/env"
+fi
 
 ### MySQL ###
 export DATADIR="$ASDF_DATA_DIR/installs/mysql/datadir/"
